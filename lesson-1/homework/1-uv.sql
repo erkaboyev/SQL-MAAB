@@ -25,9 +25,9 @@ SQL Server - Microsoft компанияси томонидан ишлаб чиқ
 SSMS (SQL Server Management Studio) - SQL Server билан ишлаш учун яратилган дастур.
 
 7. SQL буйруқларининг тоифалари:
-DDL (Data Definition Language) - маълумотларни ажратиб олиш. Мисол учун: SELECT.
-DML (Data Manipulation Language) - маълумотларни таҳрирлаш. Мисол учун: INSERT, UPDATE, DELETE.
-DQL (Data Query Language) - жадвалларни бошқариш. Мисол учун: CREATE, ALTER, DROP.
+DQL (Data Query Language) - маълумотларни ажратиб олиш. Мисол учун: SELECT.
+DDL (Data Definition Language) - маълумотларни таҳрирлаш. Мисол учун: INSERT, UPDATE, DELETE.
+DML (Data Manipulation Language) - жадвалларни бошқариш. Мисол учун: CREATE, ALTER, DROP.
 DCL (Data Control Language) - фойдаланиш хуқуқларини бошқариш. Мисол учун: GRANT, REVOKE, DENY.
 ТCЛ (Transaction Control Language) - транзаксияларни бошқариш. Мисол учун: BEGIN TRANSACTION, COMMIT, ROLLBACK, SAVEPOINT.
 
@@ -41,5 +41,4 @@ DCL (Data Control Language) - фойдаланиш хуқуқларини бош
 5-қадам: Очилган ойнада "Device" (қурилма) бандини танлаб, уч нуқтали тугмани босамиз [...].
 6-қадам: "Add" (қўшиш) тугмасини босиб, компьютеримизга юкланган AdventureWorksDW2022.bak файлини топамиз.
 7-қадам: AdventureWorksDW2022.bak файлини танлаб тасдиқлаш тугмаси яъни "ОК"ни босамиз.
-9-қадам: Асосий тиклаш ойнасида маълумотлар базаси номи тўғри кўрсатилганлигини текширамиз.
-10-қадам: Тиклаш жараёнини бошлаш учун "ОК" тугмасини босамиз.
+9-қадам: Тиклаш жараёнини бошлаш учун "ОК" тугмасини босамиз.
