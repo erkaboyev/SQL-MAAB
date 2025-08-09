@@ -53,7 +53,7 @@ ORDER BY Price DESC;
 
 --12. COALESCE for first non-NULL name
 SELECT EmployeeID,
-       COALESCE(FirstName, LastName) AS Name
+       COALESCE(FirstName, LastName) AS PreferredName
 FROM Employees;
 
 --13. Distinct Category and Price
@@ -86,7 +86,7 @@ WHERE ProductName LIKE '%e%';
 --18. IN operator for multiple values
 SELECT *
 FROM Employees
-WHERE DepartmentName IN ('HR', 'IT', 'Finance')
+WHERE DepartmentName IN ('HR', 'IT', 'Finance');
 
 --19. Multi-column ordering
 SELECT *
@@ -103,6 +103,11 @@ JOIN Products AS p
   ON p.ProductID = s.ProductID
 GROUP BY p.ProductID, p.ProductName
 ORDER BY TotalSales DESC;
+
+-- We check that we really have the aggregated amounts.
+SELECT COUNT(DISTINCT ProductID) as UniqueProducts,
+       COUNT(*) as TotalSalesRecords
+FROM Sales;
 
 --21. Combine FirstName and LastName
 SELECT EmployeeID,
@@ -141,7 +146,6 @@ WHERE Salary > ALL (
 
 --27. Orders in last 180 days
 DECLARE @LatestDate date = (SELECT MAX(OrderDate) FROM Orders);
-
 SELECT *
 FROM Orders
 WHERE OrderDate BETWEEN DATEADD(DAY, -180, @LatestDate) AND @LatestDate
